@@ -8,8 +8,8 @@ class Dog():
 		self.name = name
 		
 
-	def bark(self):
-		print("Woof")
+	def bark(self, number):
+		print("Woof!! My name is {} and my age is {} years old.".format(self.name, number))
 
 
 
@@ -29,4 +29,23 @@ print(type(my_dog3.species))
 print(my_dog3)
 
 
-my_dog3.bark()
+my_dog3.bark(130)
+
+
+class Circle():
+
+	pi = 3.14
+
+	def __init__(self, radius = 1): 
+
+		self.radius = radius 
+
+	def get_circumference(self):
+		return self.radius * self.pi * 2
+
+my_circle = Circle(100)
+
+print(my_circle.pi)
+print(my_circle.radius)
+
+print(my_circle.get_circumference())
