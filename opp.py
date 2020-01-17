@@ -74,8 +74,65 @@ myanimal.eat()
 myanimal.who_am_i()
 #print(myanimal)
 
+class Dog(Animal):
+	def __init__(self):
+		Animal.__init__(self)
+		print("Dog created")
+
+	def who_am_i(self):
+		print("I am an DOG")
+
+	def bark(self):
+		print("Bark WOOOOOOOOOOOOOOF")
+
+mydog = Dog()
 
 
+mydog.eat()
+
+mydog.who_am_i()
+
+mydog.bark()
+
+
+########### Polymorphism.
+
+class Cat():
+
+	def __init__(self,name):
+		self.name = name
+
+	def speak(self):
+		return self.name + "Says Miauuu"
+
+
+class Lion():
+
+	def __init__(self,name):
+		self.name = name
+
+	def speak(self):
+		return self.name + "Says GUAUUUUU"
+
+
+
+niko = Lion("Niko")
+felix = Cat("Felix")
+
+print(niko.speak())
+print(felix.speak())
+
+
+for pet in [niko, felix]:
+	print((pet))
+	print((pet.speak()))
+
+
+def pet_speak(pet):
+	print(pet.speak())
+
+pet_speak(niko)
+pet_speak(felix)
 
 
 
