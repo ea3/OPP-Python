@@ -49,3 +49,33 @@ print(my_circle.pi)
 print(my_circle.radius)
 
 print(my_circle.get_circumference())
+
+
+
+
+#####Inheritance
+
+
+class Animal():
+
+	def __init__(self):
+		print("Animal Created")
+
+	def who_am_i(self):
+		print("I am an animal")
+
+	def eat(self):
+	 	print("I am eating")
+
+
+
+myanimal = Animal()
+myanimal.eat()
+myanimal.who_am_i()
+#print(myanimal)
+
+
+
+
+
+
