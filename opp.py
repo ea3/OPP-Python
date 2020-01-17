@@ -148,7 +148,7 @@ class Animal():
 ##################### Magic methods// dunder mthods.
 
 mylist = [1,2,3]
-print(len(mylist))
+#print(len(mylist))
 
 class Sample():
 	pass
